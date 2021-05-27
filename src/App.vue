@@ -9,8 +9,10 @@
     <v-spacer></v-spacer>
     <div class="links">
       <router-link  to="/">Home</router-link>
-      <router-link v-if="!isLoged()" to="/login">Login</router-link>
-      <label v-if="isLoged()" @click="logout()">Logout</label>
+      <!-- make sure it is outside a tag 
+        <router-link v-if="!isLoged()" to="/login">Login</router-link>
+        <label v-if="isLoged()" @click="logout()">Logout</label>
+        -->
     </div>
        
   </v-app-bar>
